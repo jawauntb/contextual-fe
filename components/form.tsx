@@ -22,7 +22,7 @@ const FormInput: React.FC = () => {
   };
 
   return (
-    <div className="w-full max-w-xs m-7 w-80 container mx-auto rounded-lg overflow-hidden border border-gray-200 backdrop-blur-md bg-white/50 shadow-xl">
+    <div className="w-full max-w-xs m-7 w-80 container mx-auto rounded-lg overflow-hidden border border-gray-200 backdrop-blur-md bg-white/50 shadow-xl items-center">
       <form onSubmit={handleSubmit} className="p-5">
         <div className="resize">
           <TaskInput

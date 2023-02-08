@@ -5,10 +5,9 @@ import { useState } from 'react'
 import ylang_logo from '../public/ylang.jpg'
 
 const navigation = [
-  { name: 'Product', href: '#' },
-  { name: 'Features', href: '#' },
+  { name: 'Chat', href: '/chat' },
+  { name: 'Features', href: '/features' },
   { name: 'Pricing', href: '#' },
-  { name: 'Company', href: '#' },
 ];
 
 const MobileMenu = () => {
@@ -19,7 +18,7 @@ const MobileMenu = () => {
       <div>
         <nav className="flex h-9 items-center justify-between" aria-label="Global">
           <div className="flex lg:min-w-0 lg:flex-1" aria-label="Global">
-            <a href="#" className="-m-1.5 p-1.5">
+            <a href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
               <img className="h-8 shadow-md rounded-xl" src={ylang_logo.src} alt="" />
             </a>

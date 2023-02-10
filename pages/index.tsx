@@ -4,7 +4,6 @@ import Head from 'next/head'
 import Image from 'next/image'
 import PageBody from './page'
 import Form from '../components/form'
-import MobileMenu from '../components/mobileMenu';
 import ylang_logo from '../public/ylang.jpg';
 
 const Home: NextPage = () => {
@@ -12,8 +11,7 @@ const Home: NextPage = () => {
   const about = "Streamline your learning, doing and teaching by leveraging the power of your internal documents and AI. Surface relevant content, combine live search results with your data and create customized AI Agents with our that carry out tasks based on your wishes. Save time, automate tasks, and build on top of existing knowledge. Join the Contextual revolution today!"
 
   return (
-    <div className="mb-6 flex min-h-screen flex-col py-2 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-blue-400 via-cyan-300 to-yellow-100">
-      <MobileMenu />
+    <div>
       <div className="m-7 text-4xl font-bold tracking-tight sm:text-center sm:text-6xl">It's time to get <a className="text-blue-600" href="https://replit.com/@JawaunBrown/contextFE#pages/index.tsx">
         Contextual
       </a></div>

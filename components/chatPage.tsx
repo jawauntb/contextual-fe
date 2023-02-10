@@ -6,7 +6,7 @@ const ChatPage: React.FC = () => (
       <meta charSet="UTF-8" />
       <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Tailwind CSS Response Chat Template</title>
+      <title>Chat Template</title>
     </Head>
 
     <div className="container mx-auto">

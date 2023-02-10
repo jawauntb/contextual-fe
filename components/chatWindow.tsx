@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import ylang_logo from '../public/ylang.jpg'
 
-const Message: React.FC<{ user: string; message: string; time: string; image: string }> = ({
+const Message: React.FC<{ user: string; message?: string; time?: string; image?: string }> = ({
   user,
   message,
   time,
@@ -10,11 +10,11 @@ const Message: React.FC<{ user: string; message: string; time: string; image: st
 }) => {
   return (
     <div className="flex items-start px-3 py-2">
-      <img className="w-10 h-10 rounded-full" src={image} alt={user} />
+      {image && <img className="w-10 h-10 rounded-full" src={image} alt={user} />}
       <div className="ml-3">
         <p className="text-sm font-medium text-gray-600">{user}</p>
         <p className="text-sm text-gray-600">{message}</p>
-        <p className="text-xs text-gray-400">{time}</p>
+        {time && <p className="text-xs text-gray-400">{time}</p>}
       </div>
     </div>
   );
@@ -48,7 +48,6 @@ const ChatWindow: React.FC = () => {
     {
       user: "Blossom",
       message: "Hey, How are you?",
-      time: new Date().toLocaleTimeString(),
       image: ylang_logo.src,
     }
   ]);

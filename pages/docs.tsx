@@ -94,8 +94,8 @@ const DocumentsPage = () => {
         </p>
         <ul className="mt-4 space-y-4">
           {documents.map((document) => (
-            <li key={document.id} className="bg-white dark:bg-gray-800 rounded-lg p-4">
-              <h4 className="text-lg font-medium text-gray-900 dark:text-white">
+            <li key={document.id} className="bg-white dark:bg-white/40 rounded-lg p-4">
+              <h4 className="text-lg font-medium text-gray-900 dark:text-black">
                 {document.name}
               </h4>
               <div className="mt-2">

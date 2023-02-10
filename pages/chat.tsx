@@ -1,19 +1,19 @@
 import type { NextPage } from 'next'
 import Image from 'next/image'
 import PageBody from './page'
-import MobileMenu from '../components/mobileMenu';
 import ylang_logo from '../public/ylang.jpg';
 import ChatIO from '../components/chatIO';
+import QueryForm from '../components/docSearch';
 
 const Chat: NextPage = () => {
-
-
   return (
-    <div className="mb-6 flex min-h-screen flex-col py-2 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-blue-400 via-cyan-300 to-yellow-100">
-      <MobileMenu />
+    <div>
       < PageBody >
         <main className="flex w-full flex-1 flex-col items-center justify-center px-20 text-center">
           <ChatIO />
+          <div className="flex flex-1 flex-col justify-center">
+            <QueryForm />
+          </div>
         </main>
       </PageBody >
       <footer className="flex h-1/10 w-full items-center justify-center border-t">

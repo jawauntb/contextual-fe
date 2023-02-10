@@ -6,6 +6,7 @@ import ylang_logo from '../public/ylang.jpg'
 
 const navigation = [
   { name: 'Chat', href: '/chat' },
+  { name: 'Documents', href: '/docs' },
   { name: 'Features', href: '/features' },
   { name: 'Pricing', href: '#' },
 ];
